@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Spring-OAuth2-Client
+  config:
+    import:
+      - oauth.yml
+      - database.yml
