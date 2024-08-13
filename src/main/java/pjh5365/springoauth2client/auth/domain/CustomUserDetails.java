@@ -21,7 +21,6 @@ import pjh5365.springoauth2client.auth.domain.entity.UserAccount;
 public class CustomUserDetails implements OAuth2User, UserDetails {
 
 	private final UserAccount userAccount;
-	private final Map<String, Object> attributes;
 
 	@Override
 	public String getPassword() {
@@ -35,7 +34,7 @@ public class CustomUserDetails implements OAuth2User, UserDetails {
 
 	@Override
 	public Map<String, Object> getAttributes() {
-		return attributes;
+		return null;
 	}
 
 	@Override

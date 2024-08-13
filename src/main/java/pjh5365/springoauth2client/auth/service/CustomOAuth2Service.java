@@ -62,6 +62,6 @@ public class CustomOAuth2Service extends DefaultOAuth2UserService {
 			userAccount = byUsername.get();
 		}
 
-		return new CustomUserDetails(userAccount, oauth2User.getAttributes());
+		return new CustomUserDetails(userAccount);
 	}
 }
